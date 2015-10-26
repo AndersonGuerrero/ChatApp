@@ -1,0 +1,15 @@
+# view AndroidManifest.xml #generated:9
+-keep class com.unergchat.CordovaApp { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class de.appplant.cordova.plugin.localnotification.Receiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class de.appplant.cordova.plugin.localnotification.ReceiverActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:17
+-keep class de.appplant.cordova.plugin.localnotification.Restore { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class org.pgsqlite.SQLitePlugin { <init>(...); }
+

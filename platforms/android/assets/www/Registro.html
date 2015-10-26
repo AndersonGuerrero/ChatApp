@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Validacion de usuarios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/MY.css" />
+  <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  
+  
+</head>
+<body> 
+    <div data-role="page" id="Registro">
+ 
+	<div data-role="header"  data-position="fixed" >     
+		<h1 style="color: #2ad"><img src="img/LOGO.png" height="30" width="30"> UnergChat</h1>
+        </div>
+    
+        <div role="main" class="ui-content">	 
+            <h2 style="color: #2ad">Registrate.!!!</h2>
+		<form id="formulario-registro">
+                    <input required type="text"   id="Nombre" name="nombre" placeholder="Tu Nombre">
+                    
+                    <select id="codigo" >
+                        <option value="Codigo" selected disabled >Codigo</option>
+                        <option value="0426">0426</option>
+                        <option value="0416">0416</option>
+                        <option value="0424">0424</option>
+                        <option value="0414">0414</option>
+                        <option value="0412">0412</option>
+                    </select>
+                    <input  type="number" id="Numero" name="numero" placeholder="Tu Numero Telefonico">
+                        <center>
+                        <button style="color: #2ad" type="submit"  class="ui-btn ui-btn-inline ui-icon-user ui-btn-icon-bottom" id="botonLogin">Registar</button>
+                        </center>
+    		</form>	
+	</div>
+    
+        <div data-role="footer" style="color: #2ad;text-align: center;" class="pie"  data-position="fixed" >Area de Ing Informatica</div>
+</div>
+    <script type="text/javascript" src="js/Funciones_registro.js"></script>
+</body>
+</html>

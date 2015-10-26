@@ -1,0 +1,23 @@
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript">    
+document.addEventListener("deviceready",crearDatabase,false);
+var db;
+function crearDatabase() 
+{db = window.sqlitePlugin.openDatabase({name: "data.db"});  
+estaRegistrado();
+}
+
+ function estaRegistrado()
+ { 
+      db.executeSql('CREATE TABLE IF NOT EXISTS yo (id integer primary key, Numero text, Nombre text, Estado text)');
+      
+        db.executeSql("SELECT id from yo;", [], function(res) {
+        
+        if(res.rows.length>="1"){
+            
+          top.location.replace("index.html");
+      }else{
+          top.location.replace("Registro.html"); }
+      });
+ }
+  </script>
